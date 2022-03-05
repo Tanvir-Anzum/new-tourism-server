@@ -6,7 +6,7 @@ const cors = require('cors')
 const port = process.env.PORT || 5000
 const ObjectId = require('mongodb').ObjectId
 //userme
-//133075
+//133075c
 app.use(cors())
 const MongoClient = require('mongodb').MongoClient
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ukmrv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
@@ -21,11 +21,11 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World then!')
 })
 
 app.listen(port, () => {
-  console.log('Example app listening on port no a',port)
+  console.log('Example app listening on port no a')
 })
 
 async function run() {
